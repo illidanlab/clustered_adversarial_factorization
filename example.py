@@ -137,13 +137,7 @@ def train(X_missing_data, missing_ID,  X_notmissing_data,samplesize, weight, ind
 
 
 def load_data():
-    mat = scipy.io.loadmat('data_dir')
-    X_missing_data = mat['X_missing_data']
-    X_notmissing_data = mat['X_notmissing_data']
-    weight = mat['weight_full_V']
-    index1 = mat['index1_V']
-    index2 = mat['index2_V']
-    X_full = mat['X_full']
+    pass
     return {'X_missing_data': X_missing_data, 
            'X_notmissing_data': X_notmissing_data, 
            'X_full': X_full, 'weight': weight, 
